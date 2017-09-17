@@ -3,6 +3,12 @@
   <name>NoMoreBreakdownNoise</name>
   <author>Cisien</author>
   <url>http://cisien.com</url>
-  <description>The core game content for RimWorld.</description>
+  <description>
+    Replaces the letter notification for breakdown events with a notice in the top-left of the screen.
+
+    * Can be added to existing saves
+    * Works with Fluffy's Breakdowns
+    * Tested at the bottom of the mod-load order, but it shouldn't matter where its placed.
+  </description>
   <targetVersion>0.17.1557</targetVersion>
 </ModMetaData>
