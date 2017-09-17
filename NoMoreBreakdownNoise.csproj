@@ -61,6 +61,7 @@
     <Content Include="About\About.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="About\PublishedFileId.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Defs\" />
