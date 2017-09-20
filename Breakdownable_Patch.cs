@@ -1,12 +1,10 @@
 ﻿using Harmony;
 using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using Verse;
 using Verse.AI.Group;
 
-namespace NoMoreBreakdownNoise
+namespace JustFixIt
 {
     [StaticConstructorOnStartup]
     public static class Breakdownable_Patch
@@ -39,19 +37,11 @@ namespace NoMoreBreakdownNoise
         public static void DisplayMessage(ThingWithComps parent)
         {
             var message = new TransitionAction_Message("LetterLabelBuildingBrokenDown".Translate(new object[] { parent.LabelShort }), MessageSound.Standard, parent);
-
             message.DoAction(new Transition(null, null));
-#if DEBUG
-            Log.Message("Breakdown event occurred");
-            Log.TryOpenLogWindow();
-#endif
         }
 
         public static IEnumerable<CodeInstruction> DoBreakdownNoOp(IEnumerable<CodeInstruction> instructions)
         {
-#if DEBUG
-            Log.Message(string.Join(Environment.NewLine, instructions.Select(a => a.ToString()).ToArray()));
-#endif   
             yield break;
         }
     }

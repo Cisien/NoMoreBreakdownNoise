@@ -7,8 +7,8 @@
     <ProjectGuid>{7AD03062-64FF-460E-B97E-4AFAF25E340D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NoMoreBreakdownNoise</RootNamespace>
-    <AssemblyName>NoMoreBreakdownNoise</AssemblyName>
+    <RootNamespace>JustFixIt</RootNamespace>
+    <AssemblyName>JustFixIt</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -55,7 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="0Harmony.dll">
+    <Content Include="Libs\0Harmony.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="About\About.xml">
